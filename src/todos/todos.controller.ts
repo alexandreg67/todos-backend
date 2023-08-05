@@ -9,23 +9,15 @@ export class TodosController {
 
     @Get()
     getAllTodos() {
-        return this.todosService.findAll();
     }
 
     @Post()
     creatTodo(@Body() body: CreateTodoDto) {
-        return this.todosService.create(body);
     }
 
     @Get(':id')
     async getOneTodo(@Param('id') id:string) {
-        const message = await this.todosService.findOne(id);
 
-        if (!message) {
-            throw new NotFoundException('todo not found');
-        }
-
-        return message;
     }
 
 }
