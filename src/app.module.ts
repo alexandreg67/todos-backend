@@ -3,9 +3,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TodosModule } from './todos/todos.module';
-import { Todo } from './todos/todos.entity';
+import { Todo } from './todos/entity/todos.entity';
 import { UsersModule } from './users/users.module';
-import { User } from './users/user.entity';
+import { User } from './users/entity/user.entity';
 
 import * as dotenv from 'dotenv'
 

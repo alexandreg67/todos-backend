@@ -28,8 +28,7 @@ export class User {
 
     @AfterRemove()
     logRemove() {
-        console.log('User is remove with id : ', this.id);
-        
+        console.log('User is remove with id : ', this.id);  
     }
     
 }
